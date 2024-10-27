@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/berandaFragment2">
+
+    <fragment
+        android:id="@+id/berandaFragment2"
+        android:name="com.example.tugaspertemuan9.BerandaFragment"
+        android:label="BerandaFragment" >
+        <action
+            android:id="@+id/action_berandaFragment2_to_profileFragment2"
+            app:destination="@id/profileFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="com.example.tugaspertemuan9.ProfileFragment"
+        android:label="ProfileFragment" />
+    <fragment
+        android:id="@+id/inboxFragment2"
+        android:name="com.example.tugas_pppb10_syahla.InboxFragment"
+        android:label="fragment_inbox"
+        tools:layout="@layout/fragment_inbox" />
+    <fragment
+        android:id="@+id/mutasiFragment2"
+        android:name="com.example.tugas_pppb10_syahla.MutasiFragment"
+        android:label="fragment_mutasi"
+        tools:layout="@layout/fragment_mutasi" />
+</navigation>
